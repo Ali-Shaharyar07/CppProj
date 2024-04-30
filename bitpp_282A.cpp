@@ -2,7 +2,13 @@
 using namespace std;
 
 void solve() {
-	
+	string str; cin >> str;
+	char counts[3]; 
+
+	for (int i=0; i<=str.size()-1; i++) { 
+		counts[i] = str[i];
+		cout << counts[i] << endl;
+	}
 
 }
 

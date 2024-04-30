@@ -2,8 +2,15 @@
 using namespace std;
 
 void solve() {
-	int a;
-}
+		int n, m; cin >> n >> m;
+		string rect[n];
+		for (int j=0; j<=n; j++) {
+			cin >> rect[j];
+			//cout << rect[j] << endl;
+		}
+		
+
+	}
 
 int main() {
 	int tc; cin >> tc;
