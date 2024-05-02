@@ -4,10 +4,11 @@ typedef long long ll;
 #define sz(x)            (int) (x).size()
 #define LCM(a, b)        (a / __gcd(a, b)) * b
 
-
-
-
 void solve() {
+	string a = "Hello";
+	cout << a.find('a');
+
+	
 
 }
 
@@ -17,4 +18,5 @@ int main() {
 		//cout << "TEST CASE# " << i << endl;
 		solve();
 	}
+		
 }

@@ -8,7 +8,18 @@ typedef long long ll;
 
 
 void solve() {
-
+	int n, m, c=0, temp, index, ans = 0; cin >> n >> m;
+	string a, b, str; cin >> a >> b;
+	if (a == b) { cout << n << endl; return;}
+	for (int i = 0; i < m; i++){
+		temp = a[c];
+		if (temp == b[i]){
+			ans++;
+			c++;
+			continue;
+		}
+	}
+	cout << ans << endl;
 }
 
 int main() {
