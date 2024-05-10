@@ -1,22 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-void solve() {
-	string str; cin >> str;
-	char counts[3]; 
-
-	for (int i=0; i<=str.size()-1; i++) { 
-		counts[i] = str[i];
-		cout << counts[i] << endl;
+typedef string str;
+int solve(int x) {
+	str cmd; cin >> cmd;
+	bool a = false;
+	for (char e : cmd){
+		if (e == '+'){
+			a = true;
+		}
+		if (e == '-'){
+			a = false;
+		}
 	}
-
+	if (a) {
+		return ++x;
+	} else return --x;
 }
 
 int main() {
+	int x = 0;
 	int tc; cin >> tc;
 	for(int i = 1; i <= tc; i++) {
 		//cout << "TEST CASE# " << i << endl;
-		solve();
+		x = solve(x);
 	}
-	
+	cout << x << endl;
 }
