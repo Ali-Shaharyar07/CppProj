@@ -3,10 +3,20 @@ using namespace std;
 typedef string str;
 typedef long long ll;
 #define LCM(a, b)        (a / __gcd(a, b)) * b
-char upper(char c){return c - 'a' + 'A';}
-char lower(char c){return c + 'a' - 'A';}
 
 void solve() {
+	int n, m; cin >> n >> m;
+	
+		for(int i=n; i>=0; i-=2){
+		if(m == i){
+			cout << "Yes" << endl;
+			return;
+		}
+	}
+	cout << "No" << endl;
+	return;
+
+	
 	
 }
 

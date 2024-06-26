@@ -7,8 +7,24 @@ char upper(char c){return c - 'a' + 'A';}
 char lower(char c){return c + 'a' - 'A';}
 
 void solve() {
-	
-}
+	 int l, r; cin >> l >> r;
+	 int x = r, s=0, p=2;
+	 while(x!=1){
+	 	if(p%2 == 0){
+	 		p = 2;
+	 	} else{
+	 		p = 3;
+	 		while(x%p != 0){
+	 			p++;
+	 		}
+	 	}
+	 	x = x/p;
+	 	s++;
+
+	 }
+	 cout << s << endl;
+			
+	}
 
 int main() {
 	int tc; cin >> tc;
